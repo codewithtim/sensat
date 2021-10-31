@@ -32,7 +32,7 @@ Run the server
 `node build/src/server`
 
 
-### Approach
+### Approach
 I've attempted to keep the business logic and display logic separate.
 We have:
 src/domain/readings-domain - which contains the SQL to query to database
@@ -46,8 +46,8 @@ I've used dependency injection to keep each part of the application isolated whi
 
 I've rounded the average reading to 2 decimal places.
 
-### Testing
+### Testing
 The testing is pretty light, this is mainly as I've not done any DB level testing. I'd normally test the SQL and run any application level testing against a test database populated using factories. I've not done this as the DB is not in my control, I'm not overly familiar with the data nor in the time I had did I think it was worth spinning up a docker container, creating migrations etc
 
-### Typescript
+### Typescript
 I've not worked on a full TS project nor have I set one up so I'm not 100% confident with how I've handled the static typing and I'm sure there are areas for improvement here.
