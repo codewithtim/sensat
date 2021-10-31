@@ -4,31 +4,58 @@ Install dependencies
 
 Run Via npm
 Run the CLI
+
+
 `npm run read_sensor_data -- --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00'`
 
 With YAML config
+
+
 `npm run read_sensor_data -- --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00' -conf conf.yaml`
+
+
 Aggregate
+
+
 `npm run read_sensor_data -- --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00' --aggregate=true -conf conf.yaml`
+
+
 Server
+
+
 `npm run server`
 
 
 Or via Node
 
 Build the typescript
+
+
 `npm run build`
 
 Then:
 
 Run the CLI
+
+
 `node build/src/read_sensor_data --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00'`
+
+
 With YAML config
+
+
 `node build/src/read_sensor_data --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00' -conf conf.yaml`
+
+
 Aggregate
+
+
 `node build/src/read_sensor_data --box_id=Box-A1 --from='2021-04-07 00:00:00' --to='2021-04-07 00:09:00' --aggregate=true -conf conf.yaml`
 
+
 Run the server
+
+
 `node build/src/server`
 
 
